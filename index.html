@@ -226,7 +226,7 @@ textarea.in{min-height:74px;resize:vertical}
 <script src="./image-slot.js"></script>
 <script src="./trip-data.js"></script>
 <script>
-const KEY='tokyo-trip-2026-11-v54', DOW=['日','一','二','三','四','五','六'];
+const KEY='tokyo-trip-2026-11-v55', DOW=['日','一','二','三','四','五','六'];
 const CAT={transport:{l:'交通',c:'plain',s:'dia'},sight:{l:'景點',c:'',s:''},food:{l:'飲食',c:'',s:'sq'},stay:{l:'住宿',c:'plain',s:''}};
 const CAT_STYLE={sight:'background:var(--sight-soft);color:var(--sight)',food:'background:var(--food-soft);color:var(--food)',stay:'background:var(--stay-soft);color:var(--stay)',transport:''};
 function build(){const days=[];for(let d=11;d<=19;d++){const date=`2026-11-${String(d).padStart(2,'0')}`;days.push({date,items:(window.TRIP_DEFAULT[date]||[]).map(o=>JSON.parse(JSON.stringify(o)))})}return days}
